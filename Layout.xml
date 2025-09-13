@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <!-- Título do App -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meu App Yoka"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Imagem do App -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:layout_below="@id/tvTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Botão para criar projeto -->
+    <Button
+        android:id="@+id/btnCreateProject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Criar Projeto"
+        android:layout_below="@id/imgLogo"
+        android:layout_marginTop="30dp"/>
+
+    <!-- Botão para instalar IPA -->
+    <Button
+        android:id="@+id/btnInstallIPA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Instalar IPA"
+        android:layout_below="@id/btnCreateProject"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Botão para instalar APK -->
+    <Button
+        android:id="@+id/btnInstallAPK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Instalar APK"
+        android:layout_below="@id/btnInstallIPA"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
